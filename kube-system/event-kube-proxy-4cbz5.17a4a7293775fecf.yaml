@@ -1,26 +1,26 @@
-apiVersion: events.k8s.io/v1
-deprecatedCount: 7195
-deprecatedFirstTimestamp: "2023-12-27T09:45:54Z"
-deprecatedLastTimestamp: "2024-01-02T16:41:12Z"
-deprecatedSource:
-  component: kubelet
-  host: sharmag-k8s-dpdk-kubelet1-pnad30.englab.juniper.net
+apiVersion: v1
+count: 7195
 eventTime: null
-kind: Event
-metadata:
-  creationTimestamp: "2023-12-27T09:45:54Z"
-  name: kube-proxy-4cbz5.17a4a7293775fecf
-  namespace: kube-system
-note: 'Nameserver limits were exceeded, some nameservers have been omitted, the applied
-  nameserver line is: 10.84.5.101 172.21.200.60 66.129.233.81'
-reason: DNSConfigForming
-regarding:
+firstTimestamp: "2023-12-27T09:45:54Z"
+involvedObject:
   apiVersion: v1
   kind: Pod
   name: kube-proxy-4cbz5
   namespace: kube-system
   resourceVersion: "731"
   uid: 9f53e7d4-5432-47c7-be88-5bb4dfefd626
-reportingController: kubelet
+kind: Event
+lastTimestamp: "2024-01-02T16:41:12Z"
+message: 'Nameserver limits were exceeded, some nameservers have been omitted, the
+  applied nameserver line is: 10.84.5.101 172.21.200.60 66.129.233.81'
+metadata:
+  creationTimestamp: "2023-12-27T09:45:54Z"
+  name: kube-proxy-4cbz5.17a4a7293775fecf
+  namespace: kube-system
+reason: DNSConfigForming
+reportingComponent: kubelet
 reportingInstance: sharmag-k8s-dpdk-kubelet1-pnad30.englab.juniper.net
+source:
+  component: kubelet
+  host: sharmag-k8s-dpdk-kubelet1-pnad30.englab.juniper.net
 type: Warning

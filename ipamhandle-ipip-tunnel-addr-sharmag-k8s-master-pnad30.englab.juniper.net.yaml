@@ -1,0 +1,12 @@
+apiVersion: crd.projectcalico.org/v1
+kind: IPAMHandle
+metadata:
+  annotations:
+    projectcalico.org/metadata: '{"creationTimestamp":null}'
+  creationTimestamp: "2023-12-27T09:46:29Z"
+  name: ipip-tunnel-addr-sharmag-k8s-master-pnad30.englab.juniper.net
+spec:
+  block:
+    10.244.100.192/26: 1
+  deleted: false
+  handleID: ipip-tunnel-addr-sharmag-k8s-master-pnad30.englab.juniper.net

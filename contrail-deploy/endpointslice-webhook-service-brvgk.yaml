@@ -1,0 +1,38 @@
+addressType: IPv4
+apiVersion: discovery.k8s.io/v1
+endpoints:
+- addresses:
+  - 192.168.1.3
+  conditions:
+    ready: true
+    serving: true
+    terminating: false
+  nodeName: sharmag-k8s-dpdk-kubelet1-pnad30.englab.juniper.net
+  targetRef:
+    kind: Pod
+    name: contrail-k8s-deployer-67c445564f-8k7kk
+    namespace: contrail-deploy
+    uid: 535131bc-6134-4efc-b92a-d29cd8fcf540
+kind: EndpointSlice
+metadata:
+  annotations:
+    endpoints.kubernetes.io/last-change-trigger-time: "2023-12-27T09:47:54Z"
+  creationTimestamp: "2023-12-27T09:47:46Z"
+  generateName: webhook-service-
+  labels:
+    app.kubernetes.io/managed-by: Helm
+    endpointslice.kubernetes.io/managed-by: endpointslice-controller.k8s.io
+    kubernetes.io/service-name: webhook-service
+  name: webhook-service-brvgk
+  namespace: contrail-deploy
+  ownerReferences:
+  - apiVersion: v1
+    blockOwnerDeletion: true
+    controller: true
+    kind: Service
+    name: webhook-service
+    uid: 542440d7-d74d-402a-8a49-fa81594467c9
+ports:
+- name: ""
+  port: 29443
+  protocol: TCP

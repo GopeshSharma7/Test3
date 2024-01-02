@@ -1,26 +1,26 @@
-apiVersion: events.k8s.io/v1
-deprecatedCount: 7191
-deprecatedFirstTimestamp: "2023-12-27T09:48:02Z"
-deprecatedLastTimestamp: "2024-01-02T16:42:52Z"
-deprecatedSource:
-  component: kubelet
-  host: sharmag-k8s-master-pnad30.englab.juniper.net
+apiVersion: v1
+count: 7191
 eventTime: null
-kind: Event
-metadata:
-  creationTimestamp: "2023-12-27T09:48:02Z"
-  name: syslog-ng-k4hcw.17a4a7471dd8af0b
-  namespace: jcnr
-note: 'Nameserver limits were exceeded, some nameservers have been omitted, the applied
-  nameserver line is: 10.84.5.101 172.21.200.60 66.129.233.81'
-reason: DNSConfigForming
-regarding:
+firstTimestamp: "2023-12-27T09:48:02Z"
+involvedObject:
   apiVersion: v1
   kind: Pod
   name: syslog-ng-k4hcw
   namespace: jcnr
   resourceVersion: "1245"
   uid: 9f969483-ed77-4f2c-b880-9c8e0da7cdf7
-reportingController: kubelet
+kind: Event
+lastTimestamp: "2024-01-02T16:42:52Z"
+message: 'Nameserver limits were exceeded, some nameservers have been omitted, the
+  applied nameserver line is: 10.84.5.101 172.21.200.60 66.129.233.81'
+metadata:
+  creationTimestamp: "2023-12-27T09:48:02Z"
+  name: syslog-ng-k4hcw.17a4a7471dd8af0b
+  namespace: jcnr
+reason: DNSConfigForming
+reportingComponent: kubelet
 reportingInstance: sharmag-k8s-master-pnad30.englab.juniper.net
+source:
+  component: kubelet
+  host: sharmag-k8s-master-pnad30.englab.juniper.net
 type: Warning
