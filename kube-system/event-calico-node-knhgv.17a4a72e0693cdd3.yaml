@@ -1,0 +1,26 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 7202
+deprecatedFirstTimestamp: "2023-12-27T09:46:15Z"
+deprecatedLastTimestamp: "2024-01-02T16:42:19Z"
+deprecatedSource:
+  component: kubelet
+  host: sharmag-k8s-dpdk-kubelet1-pnad30.englab.juniper.net
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-12-27T09:46:15Z"
+  name: calico-node-knhgv.17a4a72e0693cdd3
+  namespace: kube-system
+note: 'Nameserver limits were exceeded, some nameservers have been omitted, the applied
+  nameserver line is: 10.84.5.101 172.21.200.60 66.129.233.81'
+reason: DNSConfigForming
+regarding:
+  apiVersion: v1
+  kind: Pod
+  name: calico-node-knhgv
+  namespace: kube-system
+  resourceVersion: "856"
+  uid: 338fe525-a45c-4ae0-865f-c8887f43dd1e
+reportingController: kubelet
+reportingInstance: sharmag-k8s-dpdk-kubelet1-pnad30.englab.juniper.net
+type: Warning

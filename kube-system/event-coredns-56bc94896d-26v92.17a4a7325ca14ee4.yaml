@@ -1,0 +1,27 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 30468
+deprecatedFirstTimestamp: "2023-12-27T09:46:33Z"
+deprecatedLastTimestamp: "2024-01-02T16:28:06Z"
+deprecatedSource:
+  component: kubelet
+  host: sharmag-k8s-master-pnad30.englab.juniper.net
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-12-27T09:48:06Z"
+  name: coredns-56bc94896d-26v92.17a4a7325ca14ee4
+  namespace: kube-system
+note: 'Readiness probe failed: Get "http://10.244.100.193:8181/ready": context deadline
+  exceeded (Client.Timeout exceeded while awaiting headers)'
+reason: Unhealthy
+regarding:
+  apiVersion: v1
+  fieldPath: spec.containers{coredns}
+  kind: Pod
+  name: coredns-56bc94896d-26v92
+  namespace: kube-system
+  resourceVersion: "420"
+  uid: cfe61321-a923-47b5-ab2e-de122e60e13f
+reportingController: kubelet
+reportingInstance: sharmag-k8s-master-pnad30.englab.juniper.net
+type: Warning

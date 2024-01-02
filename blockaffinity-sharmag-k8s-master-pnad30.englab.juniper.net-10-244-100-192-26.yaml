@@ -1,0 +1,12 @@
+apiVersion: crd.projectcalico.org/v1
+kind: BlockAffinity
+metadata:
+  annotations:
+    projectcalico.org/metadata: '{"creationTimestamp":null}'
+  creationTimestamp: "2023-12-27T09:46:29Z"
+  name: sharmag-k8s-master-pnad30.englab.juniper.net-10-244-100-192-26
+spec:
+  cidr: 10.244.100.192/26
+  deleted: "false"
+  node: sharmag-k8s-master-pnad30.englab.juniper.net
+  state: confirmed

@@ -1,0 +1,31 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  annotations:
+    meta.helm.sh/release-name: jcnr
+    meta.helm.sh/release-namespace: default
+    pv.kubernetes.io/bound-by-controller: "yes"
+  creationTimestamp: "2023-12-27T09:47:46Z"
+  finalizers:
+  - kubernetes.io/pv-protection
+  labels:
+    app.kubernetes.io/managed-by: Helm
+  name: jcnr-pv-volume-2
+spec:
+  accessModes:
+  - ReadWriteOnce
+  capacity:
+    storage: 256Mi
+  claimRef:
+    apiVersion: v1
+    kind: PersistentVolumeClaim
+    name: conf-kube-crpd-worker-sts-0
+    namespace: jcnr
+    resourceVersion: "1265"
+    uid: 261631fc-dc39-4449-98a7-7d606265d8a5
+  hostPath:
+    path: /etc/crpd
+    type: ""
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: jcnrstorage
+  volumeMode: Filesystem

@@ -1,0 +1,26 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 7198
+deprecatedFirstTimestamp: "2023-12-27T09:48:02Z"
+deprecatedLastTimestamp: "2024-01-02T16:43:32Z"
+deprecatedSource:
+  component: kubelet
+  host: sharmag-k8s-dpdk-kubelet1-pnad30.englab.juniper.net
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-12-27T09:48:02Z"
+  name: syslog-ng-bmv48.17a4a747207bc7c7
+  namespace: jcnr
+note: 'Nameserver limits were exceeded, some nameservers have been omitted, the applied
+  nameserver line is: 10.84.5.101 172.21.200.60 66.129.233.81'
+reason: DNSConfigForming
+regarding:
+  apiVersion: v1
+  kind: Pod
+  name: syslog-ng-bmv48
+  namespace: jcnr
+  resourceVersion: "1254"
+  uid: 1f6b1b6f-5dec-4794-865b-90d781091e47
+reportingController: kubelet
+reportingInstance: sharmag-k8s-dpdk-kubelet1-pnad30.englab.juniper.net
+type: Warning
