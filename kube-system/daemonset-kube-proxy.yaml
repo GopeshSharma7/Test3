@@ -3,7 +3,7 @@ kind: DaemonSet
 metadata:
   annotations:
     deprecated.daemonset.template.generation: "1"
-  creationTimestamp: "2023-12-27T09:42:49Z"
+  creationTimestamp: "2023-09-01T13:06:14Z"
   labels:
     k8s-app: kube-proxy
   name: kube-proxy
@@ -30,7 +30,7 @@ spec:
             fieldRef:
               apiVersion: v1
               fieldPath: spec.nodeName
-        image: registry.englab.juniper.net/jfrog-repo/hosted_docker_images/kube-proxy:v1.28.2
+        image: registry.k8s.io/kube-proxy:v1.27.4
         imagePullPolicy: IfNotPresent
         name: kube-proxy
         resources: {}

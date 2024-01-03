@@ -13,10 +13,10 @@ data:
     clusterCIDR: 10.244.0.0/16
     configSyncPeriod: 0s
     conntrack:
-      maxPerCore: null
+      maxPerCore: 0
       min: null
-      tcpCloseWaitTimeout: null
-      tcpEstablishedTimeout: null
+      tcpCloseWaitTimeout: 0s
+      tcpEstablishedTimeout: 0s
     detectLocal:
       bridgeInterface: ""
       interfaceNamePrefix: ""
@@ -40,12 +40,6 @@ data:
       tcpTimeout: 0s
       udpTimeout: 0s
     kind: KubeProxyConfiguration
-    logging:
-      flushFrequency: 0
-      options:
-        json:
-          infoBufferSize: "0"
-      verbosity: 0
     metricsBindAddress: 0.0.0.0:10249
     mode: ""
     nodePortAddresses: null
@@ -64,7 +58,7 @@ data:
     clusters:
     - cluster:
         certificate-authority: /var/run/secrets/kubernetes.io/serviceaccount/ca.crt
-        server: https://192.168.1.2:6443
+        server: https://control-plane.minikube.internal:8443
       name: default
     contexts:
     - context:
@@ -79,7 +73,7 @@ data:
         tokenFile: /var/run/secrets/kubernetes.io/serviceaccount/token
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2023-12-27T09:42:49Z"
+  creationTimestamp: "2023-09-01T13:06:14Z"
   labels:
     app: kube-proxy
   name: kube-proxy
