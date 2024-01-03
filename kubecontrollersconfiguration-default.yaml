@@ -2,8 +2,8 @@ apiVersion: crd.projectcalico.org/v1
 kind: KubeControllersConfiguration
 metadata:
   annotations:
-    projectcalico.org/metadata: '{"uid":"713484d9-6746-4724-b35c-594a92172474","creationTimestamp":"2023-12-27T09:46:46Z"}'
-  creationTimestamp: "2023-12-27T09:46:46Z"
+    projectcalico.org/metadata: '{"uid":"f66765a4-187d-4208-a73f-4db3846839ca","creationTimestamp":"2023-12-27T18:11:11Z"}'
+  creationTimestamp: "2023-12-27T18:11:11Z"
   name: default
 spec:
   controllers:

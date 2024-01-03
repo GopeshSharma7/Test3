@@ -1,7 +1,7 @@
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:
-  creationTimestamp: "2023-12-27T09:42:48Z"
+  creationTimestamp: "2023-09-01T13:06:14Z"
   name: kubeadm:get-nodes
 rules:
 - apiGroups:
